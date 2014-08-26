@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Demo" ng-controller="AppController">
+  <head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+    <title></title>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src = "http://d3js.org/d3.v3.min.js"></script>
+
+    <script src="js/controllers.js"> </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    <script src="//code.jquery.com/jquery-2.0.0.min.js">
+    </script>
+
+    </script>
+    <script src="js/maps.js"></script>
+  </head>
+  <body>
+
+    <div id="map-canvas"/>
+  </div>
+    <button id='refresh'>refresh</button>
+
+  
+    <h1>
+        Adopt Me!
+    </h1>
+ 
+    <p bn-fade-helper class="viewport">
+ 
+        <img
+            ng-src="{{ image.source }}"
+            title="{{ image.title }}"
+            class="image"
+        />
+ 
+    </p>
+ 
+    <p class="nav">
+        <a ng-click="showImage( 1 )">1</a> -
+        <a ng-click="showImage( 2 )">2</a> -
+        <a ng-click="showImage( 3 )">3</a> -
+        <a ng-click="showImage( 4 )">4</a> -
+        <a ng-click="showImage( 5 )">5</a> -
+        <a ng-click="showImage( 6 )">6</a>
+    </p>
+
+    <script src = "js/graph.js"></script>
+ 
+  </body>
+</html>

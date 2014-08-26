@@ -1,0 +1,43 @@
+[  
+   {
+        "county": " California",
+        "population": 38332521
+    },
+    {
+        "county": " Texas",
+        "population": 26448193
+    },
+    {
+        "county": " New York",
+        "population": 19651127
+    },
+    {
+        "county": " Florida",
+        "population": 19552860
+    },
+    {
+        "county": " Illinois",
+        "population": 12882135
+    },
+
+    {
+        "county": " Pennsylvania",
+        "population": 12773801
+    },
+    {
+        "county": " Ohio",
+        "population": 11570808
+    },
+    {
+        "county": " Georgia",
+        "population": 9992167
+    },
+    {
+        "county": " Michigan",
+        "population": 9895622
+    },
+    {
+        "county": " North Carolina",
+        "population": 9848060
+    }
+]
