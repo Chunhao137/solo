@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8">
    <link rel="stylesheet" href="css/style.css">
+   <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <title></title>
     <script src="lib/angular/angular.min.js"></script>
     <script src = "http://d3js.org/d3.v3.min.js"></script>
@@ -10,19 +12,28 @@
     <script src="js/controllers.js"> </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
-    <script src="//code.jquery.com/jquery-2.0.0.min.js">
     </script>
+     <script src="js/bootstrap.min.js"></script>
+    <script src ="js/dog.js"></script>
 
     </script>
+    <div class = "map">
     <script src="js/maps.js"></script>
-  </head>
+    </div>    
+   </head>
   <body>
+    <center>
+   <div id ="title">
+      Pluto Bean
+      <img src = "css/pluto.gif">
+    </div>
+  </center>
+     
 
     <div id="map-canvas"/>
-  </div>
+    </div>
     <button id='refresh'>refresh</button>
 
-  
 
     <div class = 'petphoto'>
 
@@ -34,7 +45,6 @@
  
         <img
             ng-src="{{ image.source }}"
-            title="{{ image.title }}"
             class="image"
         />
  
@@ -50,8 +60,17 @@
     </p>
 
 </div>
-    DOG OWNERSHIP DATA BY STATE
-    <script src = "js/graph.js"></script>
+
+   <center class = "barchart"><h1><u> PET OWNERSHIP DATA BY STATE<u><h1></center>
+   <center>
+      <form class = "petbutton">
+      <button type="button" onclick ="dog()" class="btn btn-primary">Dog Data</button> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <button type="button" onclick ="cat()" class="btn btn-primary">Cat Data</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <button type="button" onclick ="bird()" class="btn btn-primary">Bird Data</button>
+    </form>
+  </center>
+      
+
  
   </body>
 </html>

@@ -1,32 +1,25 @@
 var app = angular.module( "Demo", [] );
- 
- 
-        // -------------------------------------------------- //
-        // -------------------------------------------------- //
- 
- 
-        // I control the root of the application.
+
         app.controller(
             "AppController",
             function( $scope ) {
- 
-                // I am the collection of images to show.
+
                 $scope.images = [
                     {
                         source: "images/dog1.jpg",
-                        title: "What are you smirking about?"
+                      
                     },
                     {
                         source: "images/dog2.jpg",
-                        title: "No makeup - no problem."
+                       
                     },
                     {
                         source: "images/dog3.jpg",
-                        title: "Grace and beauty."
+                    
                     },
                     {
                         source: "images/dog4.jpg",
-                        title: "Another smirk."
+                       
                     }
           
                 ];
@@ -34,16 +27,9 @@ var app = angular.module( "Demo", [] );
                 // Default to a random image.
                 $scope.image = getRandomImage();
  
- 
-                // ---
-                // PUBLIC METHODS.
-                // ---
- 
- 
-                // I show the image at the given index.
+
                 $scope.showImage = function( index ) {
  
-                    // Use -1 to adjust image for zero-based array.
                     $scope.image = $scope.images[ index - 1 ];
  
                 };
@@ -182,9 +168,7 @@ var app = angular.module( "Demo", [] );
  
                 }
  
- 
-                // Return the directive configuration.
-                return({
+                 return({
                     compile: compile,
                     restrict: "A"
                 });
