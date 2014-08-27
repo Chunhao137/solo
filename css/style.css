@@ -14,20 +14,26 @@ body {
      font-size: 100px;
 }
 .petphoto {
-     margin-left:  50px;
+     margin-left:  100px;
      margin-top: -510px;
+
+}
+.image{
+     width:600px;
+     height: 700px;
 }
 .barchart{
      margin-top: 0px; 
 }
 #refresh{
-    margin-left: 550px;
+    margin-top: 10px;
+    margin-left: 800px;
 
 }
 #map-canvas {
 	height: 450px;
 	width: 450px;
-    margin-left: 550px;
+    margin-left: 800px;
 }
        p.viewport {
             border-radius: 5px 5px 5px 5px ;

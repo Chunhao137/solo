@@ -7,9 +7,9 @@ var dog = function(){ d3.json("data.json",function(data){
 		              .attr('width',width)
 		              .attr('height',height)
 		              .append('g')
-		              .attr('transform','translate(30,-30)')
+		              .attr('transform','translate(150,-30)')
 
-		canvas.append("text")
+		canvas.append('text')
 		        .attr("x", (width / 2))             
 		        .attr("y", 150)
 		        .attr("text-anchor", "middle")  
@@ -41,7 +41,7 @@ var dog = function(){ d3.json("data.json",function(data){
 	                 })
 
 	        var x = d3.scale.linear()
-	           .range([0,width/1.09])
+	           .range([0,width/1.084])
 	           .domain([0,data.length-1]);
 
 	        var xAxis = d3.svg.axis()
@@ -68,7 +68,7 @@ function cat(){ d3.json("data.json",function(data){
 	              .attr('height',height)
 	              .attr('class','dog')
 	              .append('g')
-	              .attr('transform','translate(30,-30)')
+	              .attr('transform','translate(150,-30)')
 	              .style("visibility","show")
 
 
@@ -104,7 +104,7 @@ function cat(){ d3.json("data.json",function(data){
 	                 })
 
 	        var x = d3.scale.linear()
-	           .range([0,width/1.09])
+	           .range([0,width/1.084])
 	           .domain([0,data.length-1]);
 
 	        var xAxis = d3.svg.axis()
@@ -131,7 +131,7 @@ function bird(){ d3.json("data.json",function(data){
 	              .attr('height',height)
 	              .attr('class','dog')
 	              .append('g')
-	              .attr('transform','translate(30,-30)')
+	              .attr('transform','translate(150,-30)')
 	              .style("visibility","show")
 
 	  canvas.append("text")
@@ -166,7 +166,7 @@ function bird(){ d3.json("data.json",function(data){
 	                 })
 
 	        var x = d3.scale.linear()
-	           .range([0,width/1.09])
+	           .range([0,width/1.084])
 	           .domain([0,data.length-1]);
 
 	        var xAxis = d3.svg.axis()

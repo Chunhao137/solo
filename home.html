@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Demo" ng-controller="AppController">
+  <head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+   <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title></title>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src = "http://d3js.org/d3.v3.min.js"></script>
+
+    <script src="js/controllers.js"> </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places"></script>
+    </script>
+     <script src="js/bootstrap.min.js"></script>
+    <script src ="js/dog.js"></script>
+
+    </script>
+    <div class = "map">
+    <script src="js/maps.js"></script>
+    </div>    
+   </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a style="color:#551111" class="navbar-brand" href="#">Home</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->  
+      <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">About</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <center>
+   <div id ="title">
+      <u>Pluto Bean</u>
+      <img src = "css/pluto.gif">
+    </div>
+  </center>
+     
+
+    <div id="map-canvas"/>
+    </div>
+    <button id ='refresh' type="button" class="btn btn-primary">Refresh</button>
+    <div class = 'petphoto'>
+
+    <h1>
+        Adopt Me!
+    </h1>
+ 
+    <p bn-fade-helper class="viewport">
+ 
+        <img
+            ng-src="{{ image.source }}"
+            class="image"
+      />
+ 
+    </p>
+ 
+    <p class="nav">
+        <a ng-click="showImage( 1 )">1</a> -
+        <a ng-click="showImage( 2 )">2</a> -
+        <a ng-click="showImage( 3 )">3</a> -
+        <a ng-click="showImage( 4 )">4</a> -
+        <a ng-click="showImage( 5 )">5</a> -
+        <a ng-click="showImage( 6 )">6</a>
+    </p>
+
+</div>
+
+
+   <center class = "barchart"><h1><u> PET OWNERSHIP DATA BY STATE<u><h1></center>
+   <center>
+      <form class = "petbutton">
+      <button type="button" onclick ="dog()" class="btn btn-primary">Dog Data</button> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <button type="button" onclick ="cat()" class="btn btn-danger">Cat Data</button>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+      <button type="button" onclick ="bird()" class="btn btn-success">Bird Data</button>
+    </form>
+  </center>
+      
+
+ 
+  </body>
+</html>
